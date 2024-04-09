@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
     <title>Recipes</title>
 </head>
+
 <body>
     <a class="skip" href="#main">
         Skip to content
-      </a>
-    <header class = "header">
+    </a>
+    <header class="header">
         <h1>Common Class Project</h1>
-        <nav class = "topnav">
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "pets.html">Pets</a></li>
-                <li><a href = "recipes.html" class = "active">Recipes</a></li>
-                <li><a href = "travel.html">Travel</a></li>
-            </ul>
-        </nav>
+        <!--<div class="topnav">
+            <a href="#home" class="active">Navigation</a>
+            <div id="Links">-->
+                <nav class="topnav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pets.html">Pets</a></li>
+                        <li><a href="recipes.html" class="active">Recipes</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                    </ul>
+                </nav>
+           <!-- </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>-->
     </header>
-    <main id = "main">
+    <main id="main">
         <br> <br> <br> <br> <br> <br> <br> <br>
-        <h1>Recipes</h1>
+        <h1>Recipes</h1> <br>
+        <button onclick="hideParagraphs()">Hide</button>
         <div>
             <h2>Chinese Hot and Sour Soup</h2>
             <p><strong>Origin: </strong>China</p>
-            <img src="images/ChineseHotandSourSoup1.jpg" class = "center" alt="Image of Hot and Sour Soup being served out of a pot with a ladle.">
+            <img src="images/ChineseHotandSourSoup1.jpg" class="center"
+                alt="Image of Hot and Sour Soup being served out of a pot with a ladle.">
 
-            <p>Chinese Hot and Sour Soup (酸辣汤) is a popular and flavorful soup known for its spicy and tangy taste. It's made with a variety of ingredients including tofu, mushrooms, and bamboo shoots.</p> 
+            <p>Chinese Hot and Sour Soup (酸辣汤) is a popular and flavorful soup known for its spicy and tangy taste. It's
+                made with a variety of ingredients including tofu, mushrooms, and bamboo shoots.</p>
             <h3>Ingredients</h3>
             <ul>
                 <li>Tofu</li>
@@ -49,7 +64,7 @@
             </ol>
             <h3>Photo Gallery</h3>
             <div class="gallery">
-                <img src="images/ChineseHotandSourSoup2.jpg" alt = "An image of Hot and Sour Soup in a spoon.">
+                <img src="images/ChineseHotandSourSoup2.jpg" alt="An image of Hot and Sour Soup in a spoon.">
                 <img src="images/ChineseHotandSourSoup3.jpg" alt="An image of Hot and Sour Soup in a white bowl.">
                 <img src="images/ChineseHotandSourSoup4.jpg" alt="An image of the ingredients that go into the soup.">
             </div>
@@ -57,9 +72,14 @@
         <div>
             <h2>Homemade Mac & Cheese</h2>
             <p><strong>Origin: </strong>Northern Europe</p>
-            <img src="images/mac&cheese.jpg" class = "center" alt="Image a wooden spoon scooping out macaroni and cheese.">
+            <img src="images/mac&cheese.jpg" class="center"
+                alt="Image a wooden spoon scooping out macaroni and cheese.">
 
-            <p>Macaroni and cheese, commonly known as mac & cheese, is a comfort food staple that has captured the hearts of people all over the world. Originating from Europe and popularized in the United States, this dish consists of elbow macaroni pasta smothered in a creamy cheese sauce. The simplicity of its ingredients—pasta, cheese, and often a touch of butter or milk—belies a rich, complex flavor that has made it a favorite for both quick weeknight dinners and festive holiday gatherings.</p> 
+            <p>Macaroni and cheese, commonly known as mac & cheese, is a comfort food staple that has captured the
+                hearts of people all over the world. Originating from Europe and popularized in the United States, this
+                dish consists of elbow macaroni pasta smothered in a creamy cheese sauce. The simplicity of its
+                ingredients—pasta, cheese, and often a touch of butter or milk—belies a rich, complex flavor that has
+                made it a favorite for both quick weeknight dinners and festive holiday gatherings.</p>
             <h3>Ingredients</h3>
             <ul>
                 <li>Macaroni</li>
@@ -72,15 +92,22 @@
             </ul>
             <h3>Instructions</h3>
             <ol>
-                <li>Preheat oven to 375°. Grease a 13"x9" baking dish with butter. In a large pot of boiling salted water, cook macaroni, stirring occasionally, until al dente, 5 to 6 minutes. Drain.</li>
-                <li>In a large saucepan over medium heat, melt 1 stick butter. Sprinkle flour over and cook, stirring, until slightly golden, 2 to 3 minutes. Pour in milk and whisk until combined. Add mustard powder; season with salt and pepper. Bring to a simmer over medium-high heat and cook, stirring, until sauce starts to thicken, about 2 minutes.</li>
-                <li>Remove pan from heat and whisk in cheddar, Gruyère, and 1 cup Parmesan until melted and smooth. Stir in macaroni and transfer to the prepared dish.</li>
-                <li>In a small bowl, combine panko, oil, and remaining 1/2 cup Parmesan. Sprinkle over macaroni; season with more pepper.</li>
+                <li>Preheat oven to 375°. Grease a 13"x9" baking dish with butter. In a large pot of boiling salted
+                    water, cook macaroni, stirring occasionally, until al dente, 5 to 6 minutes. Drain.</li>
+                <li>In a large saucepan over medium heat, melt 1 stick butter. Sprinkle flour over and cook, stirring,
+                    until slightly golden, 2 to 3 minutes. Pour in milk and whisk until combined. Add mustard powder;
+                    season with salt and pepper. Bring to a simmer over medium-high heat and cook, stirring, until sauce
+                    starts to thicken, about 2 minutes.</li>
+                <li>Remove pan from heat and whisk in cheddar, Gruyère, and 1 cup Parmesan until melted and smooth. Stir
+                    in macaroni and transfer to the prepared dish.</li>
+                <li>In a small bowl, combine panko, oil, and remaining 1/2 cup Parmesan. Sprinkle over macaroni; season
+                    with more pepper.</li>
                 <li>​​Bake mac and cheese until bubbly and golden, 25 to 30 minutes. Let cool for 10 minutes.</li>
             </ol>
             <h3>Photo Gallery</h3>
             <div class="gallery">
-                <img src="images/mac&cheese2.jpg" alt = "Instant cook mac and cheese, allows you to eat within five minutes.">
+                <img src="images/mac&cheese2.jpg"
+                    alt="Instant cook mac and cheese, allows you to eat within five minutes.">
                 <img src="images/mac&cheese3.jpg" alt="Well-cooked mac and cheese with a full load of cheese.">
                 <img src="images/mac&cheese4.jpg" alt="Mac and cheese cooked in a nice cookware.">
             </div>
@@ -88,9 +115,11 @@
         <div>
             <h2>Chicken Curry</h2>
             <p><strong>Origin: </strong>Japan</p>
-            <img src="images/Japanese_Chicken_Curry.jpg" class = "center" alt="An image of japanese chicken curry in a bowl.">
+            <img src="images/Japanese_Chicken_Curry.jpg" class="center"
+                alt="An image of japanese chicken curry in a bowl.">
 
-            <p>Unlike Indian or Thai curry, Japanese curry is more savory than spicy. It’s an exemplary comfort food and one of the most-loved home-cooked dishes in Japan.</p> 
+            <p>Unlike Indian or Thai curry, Japanese curry is more savory than spicy. It’s an exemplary comfort food and
+                one of the most-loved home-cooked dishes in Japan.</p>
             <h3>Ingredients</h3>
             <ul>
                 <li>skinless, boneless chicken breast</li>
@@ -107,19 +136,27 @@
             </ul>
             <h3>Instructions</h3>
             <ol>
-                <li>Place chicken in a large, deep skillet. Drizzle with olive oil and season with salt and pepper on both sides. Add 1/3 cup water to the pan, cover, and cook over medium heat until no longer pink in the center and the juices run clear, about 20 minutes.</li>
-                <li>While chicken is cooking, pour 2 cups water into a microwave-safe bowl. Break curry sauce mix into pieces and add to water. Heat in the microwave on high for 3 1/2 minutes; remove and stir until sauce mix has completely dissolved.</li>
-                <li>Remove chicken from the skillet. Cut into cubes, return to the skillet, and pour curry sauce over top. Stir in peas, potatoes, mushrooms, carrots, and onion. Bring to a boil, then lower heat and simmer until vegetables are tender, about 30 minutes.</li>
-                <li>​Meanwhile, bring remaining water and rice to a boil in a saucepan. Reduce heat to medium-low, cover, and simmer until rice is tender and water has been absorbed, 20 to 25 minutes.</li>
+                <li>Place chicken in a large, deep skillet. Drizzle with olive oil and season with salt and pepper on
+                    both sides. Add 1/3 cup water to the pan, cover, and cook over medium heat until no longer pink in
+                    the center and the juices run clear, about 20 minutes.</li>
+                <li>While chicken is cooking, pour 2 cups water into a microwave-safe bowl. Break curry sauce mix into
+                    pieces and add to water. Heat in the microwave on high for 3 1/2 minutes; remove and stir until
+                    sauce mix has completely dissolved.</li>
+                <li>Remove chicken from the skillet. Cut into cubes, return to the skillet, and pour curry sauce over
+                    top. Stir in peas, potatoes, mushrooms, carrots, and onion. Bring to a boil, then lower heat and
+                    simmer until vegetables are tender, about 30 minutes.</li>
+                <li>​Meanwhile, bring remaining water and rice to a boil in a saucepan. Reduce heat to medium-low,
+                    cover, and simmer until rice is tender and water has been absorbed, 20 to 25 minutes.</li>
                 <li>Scoop rice into bowls and serve curry on top.</li>
             </ol>
             <h3>Photo Gallery</h3>
-            <div class = "gallery">
-                <img src="images/curry_sauce.jpeg" alt = "Image of instant curry sauce.">
+            <div class="gallery">
+                <img src="images/curry_sauce.jpeg" alt="Image of instant curry sauce.">
                 <img src="images/raw_chicken_breast.jpeg" alt="Image of a raw chicken breast.">
-                <img src="images/rice.jpeg"  alt="An image of cooked rice in a bowl.">
+                <img src="images/rice.jpeg" alt="An image of cooked rice in a bowl.">
             </div>
         </div>
     </main>
 </body>
+
 </html>

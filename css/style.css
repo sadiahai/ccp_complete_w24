@@ -40,6 +40,59 @@ p {
     margin-right: 5rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    text-align: center;
+}
+.topnav {
+    background-color: #31633f;
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav #Links {
+    display: none;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 135px;
+    padding-right: 135px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.topnav a.icon {
+    background: #000000;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.active {
+    font-style: italic;
+    font-weight: bold;
+    background-color: #000000;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 80%;
+    height: auto;
 }
 
 img {
@@ -62,24 +115,6 @@ video {
     display: grid;
     margin-left: 5rem;
     margin-right: 5rem;
-}
-
-.gallery {
-    width: 85%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 37% 37%;
-    padding: 10px;
-    justify-content: space-evenly;
-    grid-row-gap: 30px;
-}
-
-
-.gallery img {
-    display: grid;
-    width: 100%;
-    border: 5px solid #8b4201;
-    margin: auto;
 }
 
 .gallery video {
@@ -153,46 +188,12 @@ ol {
     margin-bottom: 2rem;
 }
 
-.topnav {
-    background-color: #31633f;
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding-top: 20px;
-    padding-left: 135px;
-    padding-right: 135px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.topnav a:hover {
-    background-color: #efefef;
-    color: black;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .animated-element {
-        animation: none;
-    }
-}
-
-@media screen and (min-width: 320px) {
-
+@media screen and (min-width: 992px) {
     .topnav {
         background-color: #31633f;
         overflow: hidden;
-        position: relative;
     }
-
-    .topnav #Links {
-        display: none;
-    }
-
+    
     .topnav a {
         float: left;
         color: #f2f2f2;
@@ -204,44 +205,66 @@ ol {
         text-decoration: none;
         font-size: 30px;
     }
-
-    .topnav a.icon {
-        background: #000000;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
+    
     .topnav a:hover {
-        background-color: #ddd;
-        color: #000;
+        background-color: #efefef;
+        color: black;
     }
-
-    .active {
-        font-style: italic;
-        font-weight: bold;
-        background-color: #000000;
-        color: white;
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .gallery img {
-        width: 80%;
-        height: auto;
-    }
-
     p {
-        text-align: center;
+        text-align:left;
+    }
+    .gallery {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 37% 37%;
+        padding: 10px;
+        justify-content: space-evenly;
+        grid-row-gap: 30px;
+    }
+    
+    
+    .gallery img {
+        display: grid;
+        width: 100%;
+        border: 5px solid #8b4201;
+        margin: auto;
+    }
+    
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .animated-element {
+        animation: none;
     }
 }
 
+
+
+
 @media screen and (min-width: 750px) {
+    .topnav {
+        background-color: #31633f;
+        overflow: hidden;
+    }
+    
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 135px;
+        padding-right: 135px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    
+    .topnav a:hover {
+        background-color: #efefef;
+        color: black;
+    }
     .skip {
         position: absolute;
         top: -50px;
@@ -285,6 +308,23 @@ ol {
         text-align: center;
         box-sizing: border-box;
     }
+    .gallery {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 37% 37%;
+        padding: 10px;
+        justify-content: space-evenly;
+        grid-row-gap: 30px;
+    }
+    
+    
+    .gallery img {
+        display: grid;
+        width: 100%;
+        border: 5px solid #8b4201;
+        margin: auto;
+    }
 
 
     .gallery img:nth-child(3n) {
@@ -305,7 +345,4 @@ ol {
         box-shadow: 10px 10px rgb(66, 0, 0);
     }
 
-    p {
-        text-align: center;
-    }
 }
